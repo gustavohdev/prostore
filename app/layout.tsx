@@ -23,11 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressContentEditableWarning={true}>
-      <body className={`${inter.className}`}>
+    <html
+      lang="en"
+      suppressContentEditableWarning={true}
+      className={`${inter.className}`}
+    >
+      <head></head>
+      <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
